@@ -2,7 +2,7 @@
   position: flex;
   align-items:center;
   height:200px;
- margin-top:150px;
+ margin-top:100px;
   border-radius: 15px;
   border: 1px ;
 
@@ -45,12 +45,22 @@
 /*    margin: 0;*/
 /*}*/
 
+.row {
+  background-image: url("./images/bg-intro-desktop.png");
+  background-size:cover;
+}
+
+.foot {
+
+}
+
 .container2 {
     background-color: #fff;
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 400px;
+
 }
 
 .form {
