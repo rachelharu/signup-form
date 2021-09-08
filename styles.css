@@ -26,6 +26,7 @@ body {
   margin-top: 100px;
   border-radius: 15px;
   border: 1px;
+
 }
 
 .bigtext {
@@ -56,10 +57,11 @@ body {
 }
 
 .row {
-  padding: 50px 60px 50px 60px;
+  padding: 80px 60px 80px 60px;
   background-image: url("./images/bg-intro-desktop.png");
   background-size: cover;
   background-color: hsl(0, 100%, 74%);
+
 }
 
 .foot {}
@@ -76,6 +78,8 @@ body {
 }
 
 
+
+
 /* form */
 :root {
   --error-color: #dc3545;
@@ -89,17 +93,6 @@ body {
   box-sizing: border-box;
 }
 
-/*body {*/
-/*    font-family: 'Open Sans', sans-serif;*/
-/*    font-size: 16px;*/
-/*    background-color: #f4f4f4;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    min-height: 100vh;*/
-/*    margin: 0;*/
-/*}*/
 .container2 {
   background-color: #fff;
   padding: 1em;
@@ -184,4 +177,33 @@ body {
 
 .btn:focus {
   outline: none;
+}
+
+
+@media screen and (max-width: 500px) {
+.col1 {
+  text-align: center;
+}
+.col2 {
+  margin-right:0px;
+  right:35px;
+}
+.topper{
+  margin-right:0px;
+  width:400px;
+}
+.smalltext {
+  padding-left: 22px;
+  padding-bottom:50px;
+  margin-bottom:10px;
+}
+.bigtext {
+  padding-top: 50px;
+  padding-left: 22px;
+  padding-bottom: 5px;
+}
+.container{
+  margin-top: 0px;
+}
+
 }
