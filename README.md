@@ -1,5 +1,7 @@
 ### The challenge
 
+Live Preview: [https://signup-form-azure-eta.vercel.app/] 
+
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
