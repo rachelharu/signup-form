@@ -11,5 +11,6 @@ Users should be able to:
   - The email address is not formatted correctly
 
 ##author
-design: front end mentor
+design: front end mentor.
+
 html, css, javascript: @rachelharu
