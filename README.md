@@ -10,6 +10,10 @@ Users should be able to:
   - Any `input` field is empty.
   - The email address is not formatted correctly
 
+
+##Things to do
+- fix mobile responsiveness.
+
 ##author
 design: front end mentor
 html, css, javascript: @rachelharu
