@@ -15,5 +15,6 @@ Users should be able to:
 - fix mobile responsiveness.
 
 ##author
-design: front end mentor
+design: front end mentor.
+
 html, css, javascript: @rachelharu
