@@ -1,7 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  max-width: 100%;
 }
 
 .topper {
@@ -18,6 +17,8 @@ body {
   border-radius: 5px;
   margin-right: 65px;
   margin-left: 15px;
+  outline: none;
+  border: 0;
 }
 
 .container {
@@ -27,7 +28,6 @@ body {
   margin-top: 100px;
   border-radius: 15px;
   border: 1px;
-
 }
 
 .bigtext {
@@ -43,8 +43,8 @@ body {
   font-size: 14px;
   line-height: 1.5rem;
   padding-left: 50px;
-  padding-bottom:20px;
-  margin-bottom:10px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .col1 {
@@ -59,27 +59,23 @@ body {
 
 .row {
   padding: 80px 60px 80px 60px;
-  background-image: url("./images/bg-intro-desktop.png");
+  background-image: url('./images/bg-intro-desktop.png');
   background-size: cover;
   background-color: hsl(0, 100%, 74%);
-
 }
 
-.foot {}
-
-.terms{
-  color:hsl(0, 100%, 74%);
-  font-size:10px;
+.foot {
 }
 
-
-.agreetext{
-  font-size:10px;
-  color:hsl(246, 25%, 77%);
+.terms {
+  color: hsl(0, 100%, 74%);
+  font-size: 10px;
 }
 
-
-
+.agreetext {
+  font-size: 10px;
+  color: hsl(246, 25%, 77%);
+}
 
 /* form */
 :root {
@@ -100,24 +96,21 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   width: 400px;
-  margin-left:15px;
+  margin-left: 15px;
 }
 
 .form {
   padding: 10px 20px;
-
 }
 
 .form h1 {
   font-size: 1.5em;
   text-align: center;
   margin-bottom: 20px;
-
 }
 
 .form-field {
   margin-bottom: 5px;
-
 }
 
 .form-field label {
@@ -134,11 +127,19 @@ body {
   font-size: 14px;
   display: block;
   width: 100%;
-  font-weight:600;
+  font-weight: 600;
+}
+
+.form-field input:hover {
+  outline: none;
+  border-color:#9ecaed;
+  box-shadow:0 0 10px #9ecaed;
 }
 
 .form-field input:focus {
   outline: none;
+  border-color:#9ecaed;
+  box-shadow:0 0 10px #9ecaed;
 }
 
 .form-field.error input {
@@ -155,11 +156,11 @@ body {
 
 .yaysub {
   background-color: hsl(154, 59%, 51%);
-  color:#fff;
+  color: #fff;
 }
 
-/* button */
-.btn {
+/* button  */
+/* .btn{
   width: 100%;
   padding: 3%;
   background: #007bff;
@@ -169,27 +170,37 @@ body {
   border-left-style: none;
   color: #fff;
   text-transform: uppercase;
-}
+} */
 
-.btn:hover {
-  background: #0069d9;
-  cursor: pointer;
+.yaysub:hover {
+  border: 2px solid blue;
+  border-radius: 1px;
 }
-
-.btn:focus {
+.yaysub:focus { 
   outline: none;
+  border-color: #77d17c;
+  box-shadow: 0 0 10px #256294;
 }
+
+
 /* responsiveness */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
+  .container {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    height: 200px;
+    width: 315px;
+  }
   .row {
     margin-left: 0px;
     margin-right: 0px;
-    width: 300px;
+    width: 375px;
   }
-  .topper{
+  .topper {
     border-left: 0px;
-    margin-left: 15px !important;
+    margin-left: 45px !important;
     width: 250px;
   }
   .smalltext {
@@ -202,11 +213,15 @@ body {
     padding-bottom: 0px !important;
   }
   .container2 {
-    margin-left: 0px !important;
+    margin-left: 35px !important;
     width: 282px;
   }
+  .col1 {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
   .col2 {
-    right:50px !important;
+    right: 50px !important;
     margin-left: 0px;
     width: 250px;
     padding-left: 0px;
@@ -214,34 +229,66 @@ body {
   }
 }
 
-/* @media screen and (max-width: 576px) {
+@media screen and (min-width: 500px) {
+  .container {
+    margin-top: 0px;
+  }
+
+  .bigtext {
+    padding-top: 100px;
+  }
+  .col1 {
+    padding: 0px 0px 0px 0px;
+  }
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 40px;
+    padding-right: 50px;
+  }
+  .topper {
+    margin-left: 40px;
+    width: 300px;
+  }
+  .container2 {
+    width: 300px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .topper {
+    width: 500px;
+  }
+  .container2 {
+    width: 500px;
+  }
+  .container {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 976px) {
+  .container {
+    margin-top: 100px;
+  }
   .col1 {
     text-align: center;
   }
   .col2 {
     margin-right: 0px;
-    right: 35px;
   }
   .topper {
-    margin-right: 0px;
-    margin-left: 80px;
-    
+    width: 400px;
+    margin-left: 45px;
   }
   .smalltext {
     padding-left: 22px;
     padding-bottom: 50px;
     margin-bottom: 10px;
   }
-  .bigtext {
-    padding-top: 50px;
-    padding-left: 22px;
-    padding-bottom: 5px;
-  }
-  .container {
-    margin-top: 0px;
-  }
-  .container2 {
-    margin-left: 35px;
-  }
-}
- */
+   .container2 {
+    margin-left: 45px;
+    width: 400px;
+  } 
+}  

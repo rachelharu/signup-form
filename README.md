@@ -12,7 +12,9 @@ Users should be able to:
 
 
 ##Things to do
-- fix mobile responsiveness.
+- ~~fix mobile responsiveness.~~
+
+
 
 ##author
 design: front end mentor.
